@@ -26,6 +26,22 @@ pipeline{
                  }
              }
         }  
+        
+           stage("Docker Image build"){
+             steps{
+                 script{
+                     echo 'code test'
+                 }
+             }
+        } 
+        
+           stage("Docker image push"){
+             steps{
+                 script{
+                     echo 'code test'
+                 }
+             }
+        } 
     }
     post{
         always{
